@@ -39,6 +39,7 @@ async function enableLink( _num ){
     console.log(fromblockchain1);
 //    tmp = 2;
     document.getElementById('image'+_num).style.opacity = "100%";
+    document.getElementById('link'+_num).target = "_blank";
     document.getElementById('link'+_num).href = `https://explorer-mainnet.maticvigil.com/tokens/${nftaddressArray[_num]}/instance/${fromblockchain1}/token-transfers`
     }
 }
