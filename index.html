@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAF_Stamp_Rarry</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CryptoArtFesStampRally</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Berkshire+Swash">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-    <h1>構築中です…！</h1>
+
+<body style="background: rgb(0,0,0);">
+    <div class="row">
+        <div class="col">
+            <h1 id="banner" style="text-align: center;color: rgb(255,255,255);border: 3px none var(--light);font-family: 'Berkshire Swash', cursive;font-size: 8vw;">CryptoArtFes Stamp Rally</h1>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-4"><a id="link0" target="_blank">
+                <div style="background: #ffffff;"><img id="image0" src="assets/img/tickets/base.png" style="width: 100%;opacity: 0.20;"></div><label class="d-md-flex justify-content-md-center" style="color: rgb(255,255,255);font-size: 5vw;">VisitorTicket</label>
+            </a></div>
+    </div>
+    <div class="row">
+        <div class="col-5"><a id="link1" target="_blank">
+                <div style="background: #ffffff;"><img id="image1" src="assets/img/goldfish.jpg" style="width: 100%; opacity: 0.30;"></div><label class="d-md-flex justify-content-md-center" style="color: rgb(255,255,255);font-size: 2vw;">金魚スタンプ (公式マスコット)</label>
+            </a></div>
+        <div class="col-3"><a id="link2" target="_blank">
+                <div style="background: #ffffff;"><img id="image2" src="assets/img/inu.png" style="width: 100%;opacity: 0.30;"></div><label class="d-md-flex justify-content-md-center" style="color: rgb(255,255,255);font-size: 2vw;">Replica of Chill Dog</label>
+            </a></div>
+        <div class="col-2"><a id="link3" target="_blank">
+                <div style="background: #ffffff;"><img id="image3" src="assets/img/PrincessDabiko.png" style="width: 100%;opacity: 0.30;"></div><label class="d-md-flex justify-content-md-center" style="color: rgb(255,255,255);font-size: 2vw;">Princess Dabiko<br></label>
+            </a></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div>
+                <h4 style="color: rgb(255,255,255);font-size: 4vw;margin-top: 30px;">&nbsp; Crypto Art Fes スタンプラリーページへようこそ！<br></h4>
+                <p style="margin-bottom: 0px;color: rgb(255,255,255);text-align: center;font-size: 2vw;">NFTスタンプは、CAF2021の会場で特定の『条件』を満たすともらえる無料のNFT<br>好きなものを集めたり、フルコンプリートを目指したりしてみよう！<br>(このページでは、スタンプの取得状況と取得方法が確認できます)</p>
+                <div class="text-right" style="margin-top: 20px;"><a href="https://twitter.com/NandemoToken" target="_blank" style="color: rgb(255,255,255);margin-right: 30px;">Designed by @NandemoToken</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="wallet-popup">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ウォレットを選択</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center;"><a href="javascript:loadmm_gasfree()">
+                            <p style="font-size: 24px;">MetaMask&nbsp;&nbsp;<img src="assets/img/metamask.png" width="30px"></p>
+                        </a></div>
+                </div>
+                <div class="modal-footer">
+                    <p>ウォレットを選択してください</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/NFTabi.js"></script>
+    <script src="assets/js/NFTStamps.js"></script>
+    <script src="assets/js/onload.js"></script>
 </body>
+
 </html>
