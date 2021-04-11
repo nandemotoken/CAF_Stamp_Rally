@@ -43,6 +43,6 @@ async function enableTicket( ){
         // console.log(fromblockchain1);
         const ticketimagenumber = fromblockchain1 % 10;
         // console.log(ticketimagenumber);
-        document.getElementById('image0').src = `tickets/${ticketimagenumber}.png`;
+        document.getElementById('image0').src = `assets/img/tickets/${ticketimagenumber}.png`;
     } 
 }
