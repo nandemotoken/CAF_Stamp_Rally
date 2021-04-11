@@ -10,6 +10,17 @@ nftaddressArray = [
     "0xCBe91053a4D916017957835c25882dC5EF06d9Be"
 ]
 
+const howtogetlist = [
+    //Ticket 0
+    "CAFトップページ(https://conata.world/caf)で\n『Get FREE NFT Tickets』をクリックしてチケットセンターに行こう！" , 
+    //goldfish 1
+    "CAFトップページ(https://conata.world/caf)で\n『Crypto Gold Fish』のアイコンをクリックしてスタンプ配布ページに行こう！" ,
+    //inu 2
+    "現在準備中、フェスの期間中に会場の作品付近に取得リンクが設置されるぞ inu" ,
+    //Dabiko 3
+    "現在準備中、フェスの期間中に会場の作品付近に取得リンクが設置されるぞ dabiko"
+]
+
 //画像左から0,1,2,3,4,5。
 async function enableLink( _num ){
     const web3rpc = new ethers.providers.JsonRpcProvider("https://rpc-mainnet.maticvigil.com/");
@@ -45,4 +56,8 @@ async function enableTicket( ){
         // console.log(ticketimagenumber);
         document.getElementById('image0').src = `assets/img/tickets/${ticketimagenumber}.png`;
     } 
+}
+
+async function howtoget( _num ){
+    window.alert(howtogetlist[_num]);
 }
